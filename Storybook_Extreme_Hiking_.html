@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extreme Hiking · 極限遠足</title>
+    <style>
+        body {
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+            background-color: #f7f9fc;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 700px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #b83227;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .hint {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .story-block {
+            margin: 22px 0;
+            cursor: pointer;
+            padding: 14px;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .story-block:hover {
+            background-color: #f0f4f8;
+        }
+        .english {
+            color: #2c3e50;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .chinese {
+            color: #b83227;
+            margin-top: 8px;
+            display: none;
+            line-height: 1.6;
+        }
+        .story-image {
+            width: 100%;
+            max-height: 260px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 6px;
+            background-color: #4a90e2;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #357abd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Extreme Hiking · 極限遠足</h1>
+        <div class="hint">點擊段落朗讀 · 標準英式發音 🇬🇧</div>
+        
+        <div class="controls">
+            <button onclick="stopSpeaking()">🔇 停止朗讀</button>
+            <button onclick="showAllTranslation()">📖 顯示全部翻譯</button>
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">Early the next day, Mr Munchit and Mr Bright set off early for a hike. They both had big rucksacks with them. They wanted to climb Pat Sin Leng.</div>
+            <div class="chinese">第二天一早，蒙奇特先生和布萊特先生就出發去遠足了。他們都背著大大的背包，想要攀登八仙嶺。</div>
+            <img class="story-image" src="https://picsum.photos/id/29/700/250" alt="遠足登山">
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">'OK, up we go!' said Mr Bright. 'Extreme Hiking!'</div>
+            <div class="chinese">「好，我們出發吧！」布萊特先生說。「極限遠足！」</div>
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">'Oh dear, it looks very high!' sighed Mr Munchit. But they set off cheerfully.</div>
+            <div class="chinese">「天啊，看起來好高啊！」蒙奇特先生嘆了口氣。但他們還是開心地出發了。</div>
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">Puff! Puff! Pant! Pant! Up they went. After about an hour the two friends reached the first peak.</div>
+            <div class="chinese">呼！呼！喘！喘！他們一路往上爬。大約一小時後，兩位朋友抵達了第一個山頂。</div>
+            <img class="story-image" src="https://picsum.photos/id/177/700/250" alt="登山喘氣">
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">Oh, my! Is it much further?</div>
+            <div class="chinese">哦，天啊！還要走很遠嗎？</div>
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">Then the next... And the next...</div>
+            <div class="chinese">然後下一座……再下一座……</div>
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">When they got home, it was already late.</div>
+            <div class="chinese">當他們回到家時，天已經很晚了。</div>
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">During the week Mr Bright did lots of ironing...</div>
+            <div class="chinese">那一整週，布萊特先生都在瘋狂熨衣服……</div>
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">Every Sunday Mr Munchit and Mr Bright climbed the steepest, highest hills around.</div>
+            <div class="chinese">每個星期天，蒙奇特先生和布萊特先生都會去爬附近最陡、最高的山。</div>
+            <img class="story-image" src="https://picsum.photos/id/25/700/250" alt="週日爬山">
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">And Mr Munchit cooked busily every day.</div>
+            <div class="chinese">而蒙奇特先生每天都在忙著做飯。</div>
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">One Saturday Mrs Munchit found her husband writing e-mails and his friend Mr Bright making phone calls.</div>
+            <div class="chinese">某個星期六，蒙奇特太太發現她的丈夫在寫電子郵件，而他的朋友布萊特先生在打電話。</div>
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">'What are you two doing?' she asked.</div>
+            <div class="chinese">「你們兩個在做什麼？」她問道。</div>
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">'Oh, nothing dear,' said Mr Munchit. He winked at Mr Bright.</div>
+            <div class="chinese">「哦，沒什麼，親愛的。」蒙奇特先生說著，對布萊特先生眨了眨眼。</div>
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">The next morning Mr Munchit got up early to meet his friend as usual.</div>
+            <div class="chinese">第二天早上，蒙奇特先生像往常一樣早起去見他的朋友。</div>
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">'That's a very large rucksack, dear,' said Mrs Munchit as her husband left.</div>
+            <div class="chinese">「親愛的，你的背包好大啊。」蒙奇特先生離開時，蒙奇特太太說道。</div>
+        </div>
+
+        <div class="story-block" onclick="speakText(this)">
+            <div class="english">'He really is behaving quite strangely these days,' she thought to herself.</div>
+            <div class="chinese">「他最近的行為真的很奇怪。」她在心裡想。</div>
+        </div>
+    </div>
+
+    <script>
+        // 標準英式英語發音（最自然、最清晰）
+        function speakText(block) {
+            window.speechSynthesis.cancel();
+            const text = block.querySelector('.english').textContent;
+
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = 'en-GB';      // 英式發音
+            u.rate = 0.87;         // 適中速度
+            u.pitch = 1.0;         // 自然音調
+            u.volume = 1;
+            window.speechSynthesis.speak(u);
+        }
+
+        function stopSpeaking() {
+            window.speechSynthesis.cancel();
+        }
+
+        function showAllTranslation() {
+            const list = document.querySelectorAll('.chinese');
+            list.forEach(c => {
+                c.style.display = c.style.display === 'block' ? 'none' : 'block';
+            });
+        }
+    </script>
+</body>
+</html>
