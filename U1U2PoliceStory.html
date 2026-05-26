@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>旅行與警察｜單詞+整句點讀</title>
+<style>
+body{font-family:"Microsoft JhengHei",Arial;background:#f8f9fa;margin:0;padding:20px;line-height:1.7}
+.container{max-width:900px;margin:auto;background:white;padding:25px;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+h1{color:#d32f2f;text-align:center}
+.unit-title{color:#1976d2;border-bottom:2px solid #eee;padding-bottom:8px;margin-top:30px}
+.desc{text-align:center;color:#555;margin-bottom:20px}
+.controls{text-align:center;margin:20px 0}
+button{padding:10px 20px;background:#1976d2;color:white;border:none;border-radius:8px;cursor:pointer}
+button:hover{background:#1565c0}
+.word-item{margin:12px 0;padding:10px;background:#fafafa;border-radius:8px}
+.word{color:#1976d2;cursor:pointer;font-weight:bold}
+.word:hover{text-decoration:underline}
+.sentence-wrap{cursor:pointer}
+.sentence{margin:8px 0;color:#333}
+.chinese{margin:4px 0;color:#666}
+b{color:#c2185b}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>旅行與警察｜單詞+整句點讀</h1>
+<div class="desc">👉 藍色單詞點讀｜句子區域點讀整句</div>
+
+<div class="controls">
+<button onclick="stopAll()">🔇 停止朗讀</button>
+</div>
+
+<!-- Unit 1: Going on a trip -->
+<h2 class="unit-title">1. Going on a trip（旅行）</h2>
+
+<div class="word-item"><span class="word" onclick="say(this)">check in at the airport</span> — 在機場辦理登機</div>
+<div class="word-item"><span class="word" onclick="say(this)">buy souvenirs</span> — 購買紀念品</div>
+<div class="word-item"><span class="word" onclick="say(this)">meet relatives</span> — 會見親戚</div>
+<div class="word-item"><span class="word" onclick="say(this)">write postcards</span> — 寫明信片</div>
+<div class="word-item"><span class="word" onclick="say(this)">take photos</span> — 拍照</div>
+<div class="word-item"><span class="word" onclick="say(this)">make videos</span> — 拍影片</div>
+<div class="word-item"><span class="word" onclick="say(this)">eat local food</span> — 吃當地食物</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">We need to <b><span class="word" onclick="say(event)">check in at the airport</span></b> two hours before the flight.</div>
+<div class="chinese">我們需要在起飛前兩小時<b>在機場辦理登機</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">I want to <b><span class="word" onclick="say(event)">buy souvenirs</span></b> for my friends when I visit Japan.</div>
+<div class="chinese">我去日本時想<b>購買紀念品</b>送給朋友。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">During the holiday, I will <b><span class="word" onclick="say(event)">meet relatives</span></b> in my hometown.</div>
+<div class="chinese">假期期間，我會回老家<b>會見親戚</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">My grandma likes to <b><span class="word" onclick="say(event)">write postcards</span></b> to her friends when she travels.</div>
+<div class="chinese">奶奶旅行時喜歡<b>寫明信片</b>給朋友。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">Don’t forget to <b><span class="word" onclick="say(event)">take photos</span></b> of the beautiful sunset.</div>
+<div class="chinese">別忘了為美麗夕陽<b>拍照</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">My brother likes to <b><span class="word" onclick="say(event)">make videos</span></b> of his trips and share them online.</div>
+<div class="chinese">哥哥喜歡把旅行<b>拍影片</b>並分享到網上。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">When you travel, it’s fun to <b><span class="word" onclick="say(event)">eat local food</span></b>.</div>
+<div class="chinese">旅行時<b>吃當地食物</b>很有趣。</div>
+</div>
+
+<!-- Unit 2: My travel experience -->
+<h2 class="unit-title">2. My travel experience（旅行經歷）</h2>
+
+<div class="word-item"><span class="word" onclick="say(this)">go on a boat trip</span> — 乘船旅行</div>
+<div class="word-item"><span class="word" onclick="say(this)">rides</span> — 遊樂設施</div>
+<div class="word-item"><span class="word" onclick="say(this)">meet cartoon characters</span> — 見卡通人物</div>
+<div class="word-item"><span class="word" onclick="say(this)">watch a parade</span> — 觀看巡遊</div>
+<div class="word-item"><span class="word" onclick="say(this)">take photos with koalas</span> — 和樹熊拍照</div>
+<div class="word-item"><span class="word" onclick="say(this)">kangaroos</span> — 袋鼠</div>
+<div class="word-item"><span class="word" onclick="say(this)">visit a palace</span> — 參觀皇宮</div>
+<div class="word-item"><span class="word" onclick="say(this)">castle</span> — 城堡</div>
+<div class="word-item"><span class="word" onclick="say(this)">cave</span> — 洞穴</div>
+<div class="word-item"><span class="word" onclick="say(this)">ride a horse</span> — 騎馬</div>
+<div class="word-item"><span class="word" onclick="say(this)">camel</span> — 駱駝</div>
+<div class="word-item"><span class="word" onclick="say(this)">feed animals</span> — 餵動物</div>
+<div class="word-item"><span class="word" onclick="say(this)">sheep</span> — 綿羊</div>
+<div class="word-item"><span class="word" onclick="say(this)">deer</span> — 鹿</div>
+<div class="word-item"><span class="word" onclick="say(this)">dolphins</span> — 海豚</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">We will <b><span class="word" onclick="say(event)">go on a boat trip</span></b> around the island tomorrow.</div>
+<div class="chinese">明天我們會繞島<b>乘船旅行</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">The kids loved all the <b><span class="word" onclick="say(event)">rides</span></b> at the theme park.</div>
+<div class="chinese">孩子們喜歡主題公園所有<b>遊樂設施</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">My sister was happy to <b><span class="word" onclick="say(event)">meet cartoon characters</span></b> at Disneyland.</div>
+<div class="chinese">妹妹在迪士尼很開心<b>見卡通人物</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">We went to <b><span class="word" onclick="say(event)">watch a parade</span></b> on the main street.</div>
+<div class="chinese">我們去大街上<b>觀看巡遊</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">Many tourists want to <b><span class="word" onclick="say(event)">take photos with koalas</span></b> in Australia.</div>
+<div class="chinese">許多遊客想在澳洲<b>和樹熊拍照</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence"><b><span class="word" onclick="say(event)">Kangaroos</span></b> are very common in Australia.</div>
+<div class="chinese"><b>袋鼠</b>在澳洲很常見。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">We will <b><span class="word" onclick="say(event)">visit a palace</span></b> in Europe next summer.</div>
+<div class="chinese">明年夏天我們會去歐洲<b>參觀皇宮</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">There is an old <b><span class="word" onclick="say(event)">castle</span></b> on the hill.</div>
+<div class="chinese">山上有一座古老<b>城堡</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">We explored a dark <b><span class="word" onclick="say(event)">cave</span></b> on our trip.</div>
+<div class="chinese">旅行時我們探索了一個黑暗<b>洞穴</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">Would you like to <b><span class="word" onclick="say(event)">ride a horse</span></b> on the farm?</div>
+<div class="chinese">你想在農場<b>騎馬</b>嗎？</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">We saw many <b><span class="word" onclick="say(event)">camels</span></b> in the desert.</div>
+<div class="chinese">我們在沙漠看到許多<b>駱駝</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">Children love to <b><span class="word" onclick="say(event)">feed animals</span></b> at the zoo.</div>
+<div class="chinese">小朋友喜歡在動物園<b>餵動物</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">There are many <b><span class="word" onclick="say(event)">sheep</span></b> on the green hills.</div>
+<div class="chinese">青山上有許多<b>綿羊</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">We saw a <b><span class="word" onclick="say(event)">deer</span></b> in the forest.</div>
+<div class="chinese">我們在森林看見一隻<b>鹿</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">We watched <b><span class="word" onclick="say(event)">dolphins</span></b> swim and jump in the sea.</div>
+<div class="chinese">我們看見<b>海豚</b>在海裡游和跳。</div>
+</div>
+
+<!-- Unit 3: Police stories -->
+<h2 class="unit-title">3. Police stories（警察故事）</h2>
+
+<div class="word-item"><span class="word" onclick="say(this)">steal</span> — 偷竊</div>
+<div class="word-item"><span class="word" onclick="say(this)">shoot at the robber</span> — 向劫匪開槍</div>
+<div class="word-item"><span class="word" onclick="say(this)">escape</span> — 逃跑</div>
+<div class="word-item"><span class="word" onclick="say(this)">chase</span> — 追趕</div>
+<div class="word-item"><span class="word" onclick="say(this)">cry for help</span> — 呼救</div>
+<div class="word-item"><span class="word" onclick="say(this)">arrest</span> — 逮捕</div>
+<div class="word-item"><span class="word" onclick="say(this)">set off the alarm</span> — 觸發警報</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">Someone tried to <b><span class="word" onclick="say(event)">steal</span></b> my bag on the bus.</div>
+<div class="chinese">有人在公車上想<b>偷竊</b>我的袋子。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">The police had to <b><span class="word" onclick="say(event)">shoot at the robber</span></b> to stop him.</div>
+<div class="chinese">警察必須<b>向劫匪開槍</b>阻止他。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">The prisoner tried to <b><span class="word" onclick="say(event)">escape</span></b> from jail.</div>
+<div class="chinese">囚犯試圖從監獄<b>逃跑</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">The police had to <b><span class="word" onclick="say(event)">chase</span></b> the thief through the streets.</div>
+<div class="chinese">警察在街上<b>追趕</b>小偷。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">When she saw the fire, she started to <b><span class="word" onclick="say(event)">cry for help</span></b>.</div>
+<div class="chinese">她看見火災時開始<b>呼救</b>。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">The police will <b><span class="word" onclick="say(event)">arrest</span></b> anyone who breaks the law.</div>
+<div class="chinese">警察會<b>逮捕</b>任何違法的人。</div>
+</div>
+
+<div class="word-item sentence-wrap" onclick="saySentence(this)">
+<div class="sentence">The burglar <b><span class="word" onclick="say(event)">set off the alarm</span></b> when he tried to open the window.</div>
+<div class="chinese">竊賊開窗時<b>觸發警報</b>。</div>
+</div>
+
+</div>
+
+<script>
+function say(el){
+    if (event) event.stopPropagation();
+    window.speechSynthesis.cancel();
+    const t = el.textContent.trim();
+    const u = new SpeechSynthesisUtterance(t);
+    u.lang = 'en-GB';
+    u.rate = 0.9;
+    window.speechSynthesis.speak(u);
+}
+function saySentence(el){
+    window.speechSynthesis.cancel();
+    const t = el.querySelector('.sentence').textContent.trim();
+    const u = new SpeechSynthesisUtterance(t);
+    u.lang = 'en-GB';
+    u.rate = 0.9;
+    window.speechSynthesis.speak(u);
+}
+function stopAll(){
+    window.speechSynthesis.cancel();
+}
+</script>
+
+</body>
+</html>
